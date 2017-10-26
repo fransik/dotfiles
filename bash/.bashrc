@@ -23,10 +23,10 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 shopt -s checkwinsize
 
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-PS1="\[\e[36m\]\u\[\e[m\]@\h \[\e[36m\]\W\[\e[m\] \[\e[31m\]\`parse_git_branch\`\[\e[m\] \\$ "
+PS1="\[\e[01;36m\]\u\[\e[m\]@\h \[\e[01;36m\]\w\[\e[m\]\[\e[01;31m\]\`parse_git_branch\`\[\e[m\] \\$ "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

@@ -204,8 +204,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20
 
 # Execute
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/1.jpg
-exec --no-startup-id compton --config ~/.config/compton.conf
+exec --no-startup-id compton
 exec --no-startup-id nm-applet
+exec --no-startup-id dunst
 exec --no-startup-id redshift
 
 # Float
