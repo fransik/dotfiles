@@ -1,0 +1,5 @@
+[user]
+	email = mail@fransik.nl
+	name = Frans Heeremans
+[push]
+	default = simple
