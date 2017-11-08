@@ -12,7 +12,7 @@ set path=.,,**
 
 " disable backups
 set nobackup
-set nowb
+set nowritebackup
 set noswapfile
 
 " tabs
@@ -27,6 +27,13 @@ set cursorline
 hi CursorLine cterm=NONE ctermbg=Black
 set ruler
 set rnu
+set showcmd
+set wildmenu
+
+" searching
+set incsearch
+set hlsearch
+set scrolloff=5
 
 " plugins
 syntax enable
