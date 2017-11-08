@@ -1,3 +1,6 @@
+" package management
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+set sessionoptions-=options
 execute pathogen#infect()
 
 " defaults
@@ -13,8 +16,8 @@ set nowb
 set noswapfile
 
 " tabs
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 "set smarttab
 
