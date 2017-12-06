@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=dunst
+GenericName=Notification Daemon
+Comment=A nice notification daemon
+Categories=Utility;
+Exec=dunst
