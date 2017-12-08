@@ -23,3 +23,6 @@ export npm_config_prefix="$HOME/.node_modules"
 if [ -d "$HOME/.node_modules/bin" ]; then
   export PATH="$HOME/.node_modules/bin:$PATH"
 fi
+
+# vim!
+export EDITOR=vim
