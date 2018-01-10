@@ -24,5 +24,10 @@ if [ -d "$HOME/.node_modules/bin" ]; then
   export PATH="$HOME/.node_modules/bin:$PATH"
 fi
 
+# rubygems
+if [ -d "$HOME/.gem" ]; then
+  export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+fi
+
 # vim!
 export EDITOR=vim
