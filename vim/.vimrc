@@ -24,11 +24,13 @@ set expandtab
 " visuals
 set background=dark
 set cursorline
-hi CursorLine cterm=NONE ctermbg=Black
 set ruler
 set rnu
 set showcmd
 set wildmenu
+hi CursorLine cterm=NONE ctermbg=black guibg=black
+hi ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$\| \+\ze\t/
 
 " searching
 set incsearch
