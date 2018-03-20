@@ -55,4 +55,3 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_puppet_checkers=['puppetlint']
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_pug_checkers = ['pug_lint']
