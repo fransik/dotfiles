@@ -26,9 +26,9 @@ if [ -d "$HOME/bin" ]; then
 fi
 
 # include node modules in PATH
-export npm_config_prefix="$HOME/.node_modules"
-if [ -d "$HOME/.node_modules/bin" ]; then
-    add_path "$HOME/.node_modules/bin"
+export NPM_CONFIG_PREFIX="$HOME/.npm-global"
+if [ -d "$HOME/.npm-global/bin" ]; then
+    add_path "$HOME/.npm-global/bin"
 fi
 
 # rubygems
