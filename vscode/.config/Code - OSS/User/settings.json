@@ -1,0 +1,12 @@
+{
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.accessibilitySupport": "off",
+    "files.autoSave": "off",
+    "update.channel": "none",
+    "update.enableWindowsBackgroundUpdates": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "files.insertFinalNewline": true
+}
