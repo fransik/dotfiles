@@ -9,3 +9,4 @@ Categories=
 NotShowIn=LXDE
 X-Ubuntu-Gettext-Domain=blueman
 X-MATE-Autostart-enabled=false
+Hidden=true

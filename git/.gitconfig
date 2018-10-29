@@ -1,5 +1,8 @@
 [user]
 	email = mail@fransik.nl
 	name = Frans Heeremans
+	signingKey = 118329B61C14B95A
 [push]
 	default = simple
+[commit]
+	gpgSign = true

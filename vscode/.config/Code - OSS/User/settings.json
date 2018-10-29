@@ -4,9 +4,11 @@
     "editor.renderWhitespace": "boundary",
     "editor.accessibilitySupport": "off",
     "files.autoSave": "off",
+    "files.insertFinalNewline": true,
     "update.channel": "none",
     "update.enableWindowsBackgroundUpdates": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "files.insertFinalNewline": true
+    "eslint.run": "onSave",
+    "eslint.autoFixOnSave": true
 }
