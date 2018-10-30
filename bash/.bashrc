@@ -75,11 +75,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# source gopass bash completion
-if [ -f /usr/local/bin/gopass ]; then
-    source <(gopass completion bash)
-fi
-
 # gpg-agent
 unset SSH_AGENT_PID
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/gnupg/S.gpg-agent.ssh"
