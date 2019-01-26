@@ -11,5 +11,21 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "eslint.run": "onSave",
-    "eslint.autoFixOnSave": true
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+    ],
+    "vetur.format.defaultFormatter.html": "none",
+    "vetur.format.defaultFormatter.css": "none",
+    "vetur.format.defaultFormatter.postcss": "none",
+    "vetur.format.defaultFormatter.scss": "none",
+    "vetur.format.defaultFormatter.less": "none",
+    "vetur.format.defaultFormatter.stylus": "none",
+    "vetur.format.defaultFormatter.js": "none",
+    "vetur.format.defaultFormatter.ts": "none"
 }
