@@ -36,6 +36,11 @@ if [ -d "$HOME/.gem" ]; then
     add_path "$(ruby -e 'print Gem.user_dir')/bin"
 fi
 
+# composer
+if [ -d "$HOME/.config/composer/vendor/bin" ]; then
+    add_path "$HOME/.config/composer/vendor/bin"
+fi
+
 unset -f add_path
 
 # vim!
