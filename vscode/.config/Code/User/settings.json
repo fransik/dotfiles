@@ -1,0 +1,10 @@
+{
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.formatOnSave": true,
+    "editor.accessibilitySupport": "off",
+    "files.autoSave": "off",
+    "files.insertFinalNewline": true,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+}
