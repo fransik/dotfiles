@@ -1,6 +1,8 @@
-#
 # ~/.profile: executed by the command interpreter for login shells.
-#
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
 
 # the default umask is set in /etc/profile; for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
@@ -25,15 +27,9 @@ if [ -d "$HOME/bin" ]; then
     add_path "$HOME/bin"
 fi
 
-# include node modules in PATH
-export NPM_CONFIG_PREFIX="$HOME/.npm-global"
-if [ -d "$HOME/.npm-global/bin" ]; then
-    add_path "$HOME/.npm-global/bin"
-fi
-
-# rubygems
-if [ -d "$HOME/.gem" ]; then
-    add_path "$(ruby -e 'print Gem.user_dir')/bin"
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ]; then
+    add_path "$HOME/.local/bin"
 fi
 
 # composer
@@ -42,6 +38,3 @@ if [ -d "$HOME/.config/composer/vendor/bin" ]; then
 fi
 
 unset -f add_path
-
-# vim!
-export EDITOR=vim
