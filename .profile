@@ -12,29 +12,16 @@ umask 022
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-        . "$HOME/.bashrc"
+	. "$HOME/.bashrc"
     fi
 fi
 
-add_path() {
-    if ! [[ $PATH =~ "$1" ]]; then
-        PATH="$1:$PATH"
-    fi
-}
-
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ]; then
-    add_path "$HOME/bin"
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
 fi
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ]; then
-    add_path "$HOME/.local/bin"
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
 fi
-
-# composer
-if [ -d "$HOME/.config/composer/vendor/bin" ]; then
-    add_path "$HOME/.config/composer/vendor/bin"
-fi
-
-unset -f add_path

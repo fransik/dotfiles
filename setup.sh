@@ -11,5 +11,6 @@ ln -sfv "$source_dir/.profile" "$HOME/.profile"
 ln -sfv "$source_dir/.tmux.conf" "$HOME/.tmux.conf"
 ln -sfv "$source_dir/.vimrc" "$HOME/.vimrc"
 ln -sfv "$source_dir/.zshrc" "$HOME/.zshrc"
+ln -sfv "$source_dir/.zprofile" "$HOME/.zprofile"
 
 echo "Done!"
