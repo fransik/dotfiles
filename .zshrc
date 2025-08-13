@@ -73,3 +73,6 @@ fi
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+# Lima BEGIN
+# Lima END
