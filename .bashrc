@@ -114,3 +114,5 @@ fi
 
 # Lima BEGIN
 # Lima END
+
+umask 022
