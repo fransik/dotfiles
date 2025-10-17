@@ -1,8 +1,0 @@
-[user]
-	email = mail@fransik.nl
-	name = Frans Heeremans
-	signingKey = 118329B61C14B95A
-[commit]
-	gpgSign = true
-[init]
-	defaultBranch = main

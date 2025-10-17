@@ -1,0 +1,14 @@
+[user]
+	email = mail@fransik.nl
+	name = Frans Heeremans
+	signingKey = /Users/frans/.ssh/id_frans2k5.pub
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+[init]
+	defaultBranch = main
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = /Users/frans/.ssh/allowedSigners
