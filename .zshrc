@@ -57,7 +57,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM="$HOME/code/dotfiles/.oh-my-zsh/custom"
+ZSH_CUSTOM="$HOME/dotfiles/.oh-my-zsh/custom"
 
 if [[ $(uname -s) == "Darwin" ]]; then
   ZSH_THEME="apple"
