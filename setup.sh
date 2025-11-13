@@ -5,6 +5,7 @@ echo "Linking dotfiles..."
 
 ln -sfv "$source_dir/.gnupg/gpg.conf" "$HOME/.gnupg/gpg.conf"
 ln -sfv "$source_dir/.gnupg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
+ln -sfv "$source_dir/.gnupg/scdaemon.conf" "$HOME/.gnupg/scdaemon.conf"
 ln -sfv "$source_dir/.tmux.conf" "$HOME/.tmux.conf"
 ln -sfv "$source_dir/.vimrc" "$HOME/.vimrc"
 ln -sfv "$source_dir/.zshrc" "$HOME/.zshrc"
