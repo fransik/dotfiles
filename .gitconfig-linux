@@ -12,3 +12,6 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = /home/frans/.ssh/allowedSigners
+[oh-my-zsh]
+	hide-info = 1
+	hide-status = 1
