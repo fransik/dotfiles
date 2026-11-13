@@ -1,14 +1,5 @@
-export EDITOR=vim
-
-if [[ $(uname -s) == "Darwin" ]]; then
+if [[ "$OSTYPE" == darwin* ]]; then
 	export SSH_AUTH_SOCK="$HOME/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock"
-	export LIMA_INSTANCE=devbox
-	export LIMA_WORKDIR=/home/frans
-	export HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS=1
 else
-	umask 022
-	export XDG_CONFIG_HOME="$HOME/.config"
-	export NVM_DIR="$XDG_CONFIG_HOME/nvm"
-	export NVM_SYMLINK_CURRENT=true
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 fi

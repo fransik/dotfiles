@@ -9,6 +9,7 @@ ln -sfv "$source_dir/.gnupg/scdaemon.conf" "$HOME/.gnupg/scdaemon.conf"
 ln -sfv "$source_dir/.tmux.conf" "$HOME/.tmux.conf"
 ln -sfv "$source_dir/.vimrc" "$HOME/.vimrc"
 ln -sfv "$source_dir/.zshrc" "$HOME/.zshrc"
+ln -sfv "$source_dir/.zshenv" "$HOME/.zshenv"
 ln -sfv "$source_dir/.ssh/allowedSigners" "$HOME/.ssh/allowedSigners"
 
 if [[ $(uname -s) == "Darwin" ]]; then
